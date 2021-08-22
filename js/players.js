@@ -7,6 +7,11 @@ function setPlayerStyle(player) {
 const players = document.getElementsByClassName('player');
 for (const player of players) {
     setPlayerStyle(player);
+
+    // player.addEventListener('click', function(){
+    //     player.style.backgroundColor = 'yellow';
+    // })
+
 }
 
 function addPlayer() {
@@ -19,6 +24,10 @@ function addPlayer() {
     `;
     setPlayerStyle(player);
     playersContainer.appendChild(player);
+
+    // player.addEventListener('click', function(){
+    //     player.style.backgroundColor = 'yellow';
+    // })
 }
 
 document.getElementById('players').addEventListener('click', function (event) {
